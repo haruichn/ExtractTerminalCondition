@@ -22,10 +22,8 @@ public class ExtractTerminalPosition {
 
         // データの場所指定
         String data_path = "./data/";
-        // 軸補正後のデータの格納場所
+        // 出力データの格納場所
         String output_path = "./output/";
-        // 軸補正したファイルの名前タグ
-        String corrected_tag = "corrected-";
 
         // もし出力フォルダがなければ作成
         File output_dir = new File(output_path);
