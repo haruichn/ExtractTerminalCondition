@@ -1,4 +1,4 @@
-# 軸補正ツール
+# 端末位置別のデータ抽出プログラム
 HASCデータを「端末の位置(TerminalPosition)と固定状況(TerminalMount)」から抽出するプログラム
 
 ## 使い方
