@@ -1,6 +1,4 @@
 # 軸補正ツール
-
-## 概要
 HASCデータを「端末の位置(TerminalPosition)と固定状況(TerminalMount)」から抽出するプログラム
 
 ## 使い方
@@ -16,9 +14,13 @@ HASCデータを「端末の位置(TerminalPosition)と固定状況(TerminalMoun
 3. ExtractTerminalPosition.javaと同ディレクトリにdataディレクトリを用意.
 4. dataディレクトリにHASCコーパスのデータを入れる.
 5. 以下のコマンドを実行
-      `ExtractTerminalPosition.java`
-      `ExtractTerminalPosition`
 6. outputディレクトリが作成され, そこに補正されたデータが出力される.
+
+##### コマンド
+```
+javac ExtractTerminalCondition.java
+java ExtractTerminalCondition
+```
 
 
 ### データのディレクトリ構成

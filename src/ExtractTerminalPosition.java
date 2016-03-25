@@ -1,5 +1,5 @@
 /*
-* Title：Extract Terminal Position
+* Title：Extract Terminal Condition
 * 説明 ： HASCデータを「端末の位置(TerminalPosition)と固定状況(TerminalMount)」から抽出するプログラム
 * @date Created on: 2016/03/24
 * @author Author: Haruyuki Ichino
@@ -189,7 +189,7 @@ public class ExtractTerminalPosition {
 
                     System.out.println("\t"+mount);
 
-                    if (mount.indexOf(TerminalMount) != -1) TerminalMount_flag = true;
+                    if (mount.equals(TerminalMount)) TerminalMount_flag = true;
                 }
 
                 // TerminalPositionの処理
@@ -202,7 +202,7 @@ public class ExtractTerminalPosition {
 
                     System.out.println("\t"+position);
 
-                    if (position.indexOf(TermianlPosition) != -1) TerminalPosition_flag = true;
+                    if (position.equals(TermianlPosition)) TerminalPosition_flag = true;
                 }
             }
 
