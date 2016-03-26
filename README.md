@@ -9,9 +9,9 @@ HASCデータを「端末の位置(TerminalPosition)と固定状況(TerminalMoun
 4. outputディレクトリが作成され, そこに補正されたデータが出力される.
 
 #### コマンドラインから使う場合
-1. ExtractTerminalPosition.javaを適当なティレクトリにコピー
-2. ExtractTerminalPosition.javaがある階層にcdで移動
-3. ExtractTerminalPosition.javaと同ディレクトリにdataディレクトリを用意.
+1. ExtractTerminalCondition.javaを適当なティレクトリにコピー
+2. ExtractTerminalCondition.javaがある階層にcdで移動
+3. ExtractTerminalCondition.javaと同ディレクトリにdataディレクトリを用意.
 4. dataディレクトリにHASCコーパスのデータを入れる.
 5. 以下のコマンドを実行
 6. outputディレクトリが作成され, そこに補正されたデータが出力される.

@@ -13,7 +13,7 @@ import java.nio.file.*;
 import java.util.StringTokenizer;
 
 
-public class ExtractTerminalPosition {
+public class ExtractTerminalCondition {
 
     static private String TerminalPosition = "waist";
     static private String TerminalMount = "free";
