@@ -136,12 +136,50 @@ public class ExtractTerminalCondition {
                                 Path output_labelFilePath = FileSystems.getDefault().getPath(output_person_dir.getPath()+"/"+file_id+".label");
 
                                 // コピー処理
+                                // 加速度
                                 try {
                                     Files.copy(accFilePath, output_accFilePath);
+                                    System.out.println("コピー完了: "+output_accFilePath.toString());
+                                } catch (FileAlreadyExistsException e){
+                                    System.out.println("\tError: ファイルがすでに存在しています!");
+                                } catch (NoSuchFileException e) {
+                                } catch (IOException e) {
+                                    e.printStackTrace();
+                                }
+                                // 角速度
+                                try {
                                     Files.copy(gyroFilePath, output_gyroFilePath);
+                                    System.out.println("コピー完了: "+output_gyroFilePath.toString());
+                                } catch (FileAlreadyExistsException e){
+                                    System.out.println("\tError: ファイルがすでに存在しています!");
+                                } catch (NoSuchFileException e) {
+                                } catch (IOException e) {
+                                    e.printStackTrace();
+                                }
+                                // 地磁気
+                                try {
                                     Files.copy(magFilePath, output_magFilePath);
+                                    System.out.println("コピー完了: "+output_magFilePath.toString());
+                                } catch (FileAlreadyExistsException e){
+                                    System.out.println("\tError: ファイルがすでに存在しています!");
+                                } catch (NoSuchFileException e) {
+                                } catch (IOException e) {
+                                    e.printStackTrace();
+                                }
+                                // meta
+                                try {
                                     Files.copy(metaFilePath, output_metaFilePath);
+                                    System.out.println("コピー完了: "+output_metaFilePath.toString());
+                                } catch (FileAlreadyExistsException e){
+                                    System.out.println("\tError: ファイルがすでに存在しています!");
+                                } catch (NoSuchFileException e) {
+                                } catch (IOException e) {
+                                    e.printStackTrace();
+                                }
+                                // label
+                                try {
                                     Files.copy(labelFilePath, output_labelFilePath);
+                                    System.out.println("コピー完了: "+output_labelFilePath.toString());
                                 } catch (FileAlreadyExistsException e){
                                     System.out.println("\tError: ファイルがすでに存在しています!");
                                 } catch (NoSuchFileException e) {
