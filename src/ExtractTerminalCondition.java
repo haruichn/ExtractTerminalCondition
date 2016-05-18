@@ -252,7 +252,7 @@ public class ExtractTerminalCondition {
             ex.printStackTrace();
         }
 
-        if (TerminalMount_flag == TerminalPosition_flag == true) return true;
+        if (TerminalMount_flag == true && TerminalPosition_flag == true) return true;
         else return false;
     }
 
